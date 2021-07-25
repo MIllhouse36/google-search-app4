@@ -20,7 +20,9 @@ module.exports = {
     .then(dbBook => res.json(dbBook))
     .catch(err => res.status(422).json(errr));
   }, 
-  // remove: function
+  remove: function(req, res){
+    
+  }
   
 
 };
