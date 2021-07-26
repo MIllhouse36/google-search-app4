@@ -7,4 +7,5 @@ router.route("/")
 
 router
 .route("/:id")
-.get(bookController.findAll)
+.get(bookController.findById)
+.put(bookController.update)
