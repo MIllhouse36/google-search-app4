@@ -10,7 +10,7 @@ function App() {
      <Nav/>
      <Switch>
        <Route exact path="/" component={Home}/>
-       <Route/>
+       <Route exact path= "/saved" component={Saved}/>
        <Route/>
      </Switch>
     </div>
