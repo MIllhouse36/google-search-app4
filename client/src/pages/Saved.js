@@ -5,10 +5,9 @@ import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 
-function Home(){
-  return (
+export default function Saved (){
+  return(
     <div>
-      
     </div>
   )
 }

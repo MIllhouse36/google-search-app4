@@ -4,11 +4,10 @@ import { Card } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Col } from "react-bootstrap"
 
-function Home(){
+export default function Home(){
   return (
     <div>
       
     </div>
   )
 }
-export default Home;
