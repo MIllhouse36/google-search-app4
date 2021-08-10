@@ -1,12 +1,14 @@
 import './style.css';
+import React from 'react';
 
-function Main() {
+function Footer() {
   return (
-    <div className="Main">
+    <footer>
+      <p></p> 
      Jawns
-    </div>
+    </footer>
   );
 }
 
-export default Main
+export default Footer
 ;
