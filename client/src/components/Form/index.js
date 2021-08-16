@@ -2,6 +2,7 @@ import React from "react";
 import { Form } from "react-bootstrap";
 import { FormGroup } from "react-bootstrap";
 import { FormControl } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 export default function Form({q, handleInputChange, handleFormSubmit}){
   return(
@@ -20,7 +21,14 @@ export default function Form({q, handleInputChange, handleFormSubmit}){
       required      
       />
       </FormGroup>
-      
+      <div>
+        <Button onClick={handleFormSubmit}
+        type="submit"
+        className="float-right"
+        variant="danger">
+          search
+        </Button>
+      </div>
     </Form>
   )
 }
