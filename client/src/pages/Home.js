@@ -29,6 +29,14 @@ export default function Home(){
               </h1>
             </Jumbotron>
           </Col>
+          <Col md={12}>
+            <Card title="Book Search" icon="far fa-book">
+              <Form
+              handleInputChange={handleInputChange}
+              handleFormSubmit={handleFormSubmit}/>
+              q={setQ}
+            </Card>
+          </Col>
         </Row>
       </Container>
     </div>
