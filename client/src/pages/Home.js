@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import API from "../utils/API"
 import Book from "../components/Book"
 import { Button } from "react-bootstrap";
-import List from "../components/List"
+import {List} from "../components/List"
 
 export default function Home(){
   let [books, setBooks] = useState([]);
@@ -22,7 +22,7 @@ export default function Home(){
     });
   }
 
-  useEffect(()=>{
+  let getBooks = ()=>{
     API.getBooks(q)
     .then(res => 
       setBooks(res.data
@@ -30,7 +30,7 @@ export default function Home(){
     .catch(()=>
     setBooks([]));
     setMessage("No New Books Found, Try a Different Query");
-  })
+  }
 
   let handleFormSubmit = event => {
     event.preventDefault();
@@ -58,7 +58,7 @@ export default function Home(){
           <Col md={12}>
             <Jumbotron>
               <h1 className="text-center">
-                <strong></strong>
+                <strong>(React) Google Books Search</strong>
               </h1>
             </Jumbotron>
           </Col>
@@ -67,7 +67,7 @@ export default function Home(){
               <Form
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}/>
-              q={q}
+              q={setQ}
             </Card>
           </Col>
         </Row>
