@@ -1,5 +1,6 @@
 import React from "react";
-import {Jumbotron, Row} from "react-bootstrap";
+import {Jumbotron} from "react-bootstrap";
+import { Row } from "react-bootstrap"
 import { Card } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Col } from "react-bootstrap"
@@ -9,7 +10,7 @@ import API from "../utils/API"
 import Book from "../components/Book"
 import { Button } from "react-bootstrap";
 import {List} from "../components/List"
-
+import Footer from "../components/Footer"
 export default function Home(){
   let [books, setBooks] = useState([]);
   let [q, setQ] = useState("");
@@ -66,8 +67,10 @@ export default function Home(){
             <Card title="Book Search" icon="far fa-book">
               <Form
               handleInputChange={handleInputChange}
-              handleFormSubmit={handleFormSubmit}/>
-              q={setQ}
+              handleFormSubmit={handleFormSubmit}
+              q={q}
+              />
+              
             </Card>
           </Col>
         </Row>
@@ -102,6 +105,7 @@ export default function Home(){
             </Card>
           </Col>
         </Row>
+        <Footer/>
       </Container>
     </div>
   )
