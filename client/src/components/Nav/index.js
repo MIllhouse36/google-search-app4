@@ -1,12 +1,16 @@
 import './style.css';
-import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Navbar } from 'react-bootstrap';
 
-function Nava() {
+
+function Nav() {
   return (
-    <div className="Nav">
-     Jawns
-    </div>
+    <Navbar expand="lg" variant="light" bg="light" className="mb-2" >
+     <Navbar.Brand as={Link}>
+       Google Books
+     </Navbar.Brand>
+    </Navbar>
   );
 }
 
-export default Nava;
+export default Nav;
