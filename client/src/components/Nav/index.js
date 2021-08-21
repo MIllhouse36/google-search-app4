@@ -1,6 +1,7 @@
 import './style.css';
+import { Nav } from 'react-bootstrap';
 
-function Nav() {
+function Nava() {
   return (
     <div className="Nav">
      Jawns
@@ -8,4 +9,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Nava;
