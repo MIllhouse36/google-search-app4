@@ -1,9 +1,10 @@
 import './style.css';
 import { Link } from 'react-router-dom';
-import { Navbar } from 'react-bootstrap';
+import Navbar  from 'react-bootstrap/Navbar';
 import { Button } from "react-bootstrap"
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import { useState, useEffect } from 'react';
+
 
 
 function Nav() {
@@ -30,7 +31,7 @@ function Nav() {
   })
 
   return (
-    <Navbar expand="lg" variant="light" bg="light" className="mb-2" >
+    <Navbar expand="lg" variant="light" bg="light" className="mb-2 p-2 brad" >
      <Navbar.Brand as={Link}>
        Google Books
      </Navbar.Brand>
