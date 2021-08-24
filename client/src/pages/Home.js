@@ -1,16 +1,18 @@
 import React from "react";
-import {Jumbotron} from "react-bootstrap";
+// import Jumbotron from "react-bootstrap/Jumbotron";
 import { Row } from "react-bootstrap"
 import Card  from "../components/Card";
-import { Form } from "react-bootstrap";
-import { Col } from "react-bootstrap"
-import { Container } from "react-bootstrap";
-import { useState, useEffect } from "react";
+import Form from "react-bootstrap/Form";
+import Col from "react-bootstrap/Col"
+import  Container  from "react-bootstrap/Container";
+import { useState } from "react";
 import API from "../utils/API"
 import Book from "../components/Book"
-import { Button } from "react-bootstrap";
+import  Button  from "react-bootstrap/Button";
 import {List} from "../components/List"
 import Footer from "../components/Footer"
+import "./style.css"
+
 export default function Home(){
   let [books, setBooks] = useState([]);
   let [q, setQ] = useState("");
@@ -57,11 +59,12 @@ export default function Home(){
       <Container>
         <Row>
           <Col md={12}>
-            <Jumbotron>
-              <h1 className="text-center">
+            <div id=""className="jumbotron bg-light mt-4">
+              <h1 className="text-center ">
                 <strong>(React) Google Books Search</strong>
               </h1>
-            </Jumbotron>
+              <h2 className="text-center">Search for and Save Books of Interest.</h2>
+            </div>
           </Col>
           <Col md={12}>
             <Card title="Book Search" icon="far fa-book">

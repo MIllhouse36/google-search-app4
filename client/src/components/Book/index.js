@@ -1,6 +1,7 @@
 import React from "react";
 import { ListItem } from "../List";
-import { Row, Col } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 function Book({title, subtitle, authors, link, description, image, Button}){
   return(
