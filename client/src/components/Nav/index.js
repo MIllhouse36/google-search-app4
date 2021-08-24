@@ -2,6 +2,7 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
 import { Button } from "react-bootstrap"
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 
 function Nav() {
@@ -22,12 +23,27 @@ function Nav() {
     setOpen(!open)
   }
 
+  useEffect(() => {
+  window.addEventListener("resize", updateWidth)
+  window.removeEventListener("resize", updateWidth)
+  })
+
   return (
     <Navbar expand="lg" variant="light" bg="light" className="mb-2" >
      <Navbar.Brand as={Link}>
        Google Books
      </Navbar.Brand>
+    <NavbarToggle 
+    onClick={toggleNav}
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-label="Toggle navigation"
+    >
+      <span></span>
+    </NavbarToggle>
     </Navbar>
+    
   );
 }
 
