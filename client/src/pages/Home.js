@@ -59,7 +59,7 @@ export default function Home(){
       <Container>
         <Row>
           <Col md={12}>
-            <div id=""className="jumbotron bg-light mt-4">
+            <div className="jumbotron rounded-3 mt-4">
               <h1 className="text-center ">
                 <strong>(React) Google Books Search</strong>
               </h1>
