@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <p></p> 
-     Jawns
+      <i className="bi-alarm"></i>
     </footer>
   );
 }
