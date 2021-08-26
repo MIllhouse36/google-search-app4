@@ -11,6 +11,7 @@ export default function Cardcomp({ icon, title, children}){
           </strong>
         </h3>
       </Card.Header>
+      <Card.Body>{children}</Card.Body>
     </Card>
   )
 }
