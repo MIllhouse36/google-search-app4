@@ -3,8 +3,8 @@ import { ListItem } from "../List";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-function Book({title, subtitle, authors, link, description, image, Button}){
-  return(
+function Book({ title, subtitle, authors, link, description, image, Button }) {
+  return (
     <ListItem>
       <Row className="flex-wrap-reverse">
         <Col md={8}>
@@ -13,6 +13,6 @@ function Book({title, subtitle, authors, link, description, image, Button}){
         </Col>
       </Row>
     </ListItem>
-  )
+  );
 }
-export default Book
+export default Book;
