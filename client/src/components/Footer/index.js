@@ -4,7 +4,7 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <i className="bi-alarm"></i>
+      <i className="bi bi-alarm"></i>
     </footer>
   );
 }
