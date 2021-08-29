@@ -7,7 +7,7 @@ export default function Cardcomp({ icon, title, children}){
       <Card.Header>
         <h3>
           <strong>
-            <i className/>{title}
+            <i className={`fa fa-${icon}`}/>{title}
           </strong>
         </h3>
       </Card.Header>
