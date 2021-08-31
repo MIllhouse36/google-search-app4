@@ -2,8 +2,8 @@ import React from "react";
 import { ListItem } from "../List";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap"
-import Image from "react-bootstrap"
+import Button from "react-bootstrap/Button"
+import Image from "react-bootstrap/Image"
 
 
 function Book({ title, subtitle, authors, link, description, image, Btn }) {

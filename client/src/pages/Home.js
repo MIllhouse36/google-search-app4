@@ -2,7 +2,7 @@ import React from "react";
 // import Jumbotron from "react-bootstrap/Jumbotron";
 import { Row } from "react-bootstrap"
 import Card  from "../components/Card";
-import Form from "react-bootstrap/Form";
+import Form from "../components/Form";
 import Col from "react-bootstrap/Col"
 import  Container  from "react-bootstrap/Container";
 import { useState } from "react";
@@ -19,7 +19,7 @@ export default function Home(){
   let [message, setMessage] = useState("Search For A Book to Begin");
   
   let handleInputChange = event =>{
-    const { name, value } = event.target;
+    let { name, value } = event.target;
     setQ({
       [name]:value
     });

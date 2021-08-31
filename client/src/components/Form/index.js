@@ -1,10 +1,10 @@
 import React from "react";
-import  Form  from "react-bootstrap";
-import  FormGroup  from "react-bootstrap";
-import  FormControl  from "react-bootstrap";
-import Button  from "react-bootstrap";
+import  Form  from "react-bootstrap/Form";
+import  FormGroup  from "react-bootstrap/FormGroup";
+import  FormControl  from "react-bootstrap/FormControl";
+import Button  from "react-bootstrap/Button";
 
-export default function Form({q, handleInputChange, handleFormSubmit}){
+export default function Formmy({q, handleInputChange, handleFormSubmit}){
   return(
     <Form>
       <FormGroup>
@@ -25,6 +25,7 @@ export default function Form({q, handleInputChange, handleFormSubmit}){
         <Button onClick={handleFormSubmit}
         type="submit"
         className="float-right"
+        align="end"
         variant="danger">
           search
         </Button>
