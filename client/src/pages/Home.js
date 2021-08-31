@@ -92,7 +92,7 @@ export default function Home(){
                 authors={book.volumeInfo.authors.join(", ")}
                 description={book.volumeInfo.description}
                 image={book.volumeInfo.imageLinks.thumbnail}
-                Button={() => (
+                Btn={() => (
                   <Button
                   onClick={() => handleBookSave(book.id)}
                   variant="primary"
