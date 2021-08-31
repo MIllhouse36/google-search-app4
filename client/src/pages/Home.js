@@ -67,7 +67,7 @@ export default function Home(){
             </div>
           </Col>
           <Col md={12}>
-            <Card title="Book Search" icon="book">
+            <Card title="Book Search" icon=" fa-book">
               <Form
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
