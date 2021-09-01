@@ -5,7 +5,7 @@ export default function NoMatch() {
     <Container>
       <Row>
         <Col md={12}>
-          <Jumbotron>
+          <Jumbotron className="rounded-3 mt-4">
             <h1 className="text-center">404 Page Not Found</h1>
             <h1 className="text-center">
               <span role="img" aria-label="Face With Rolling Eyes Emoji">
