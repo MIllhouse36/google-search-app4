@@ -1,6 +1,6 @@
 import React from "react";
 // import Jumbotron from "react-bootstrap/Jumbotron";
-import { Row } from "react-bootstrap"
+import Row  from "react-bootstrap/Row"
 import Card  from "../components/Card";
 import Form from "../components/Form";
 import Col from "react-bootstrap/Col"
@@ -18,11 +18,11 @@ export default function Home(){
   let [q, setQ] = useState("");
   let [message, setMessage] = useState("Search For A Book to Begin");
   
-  let handleInputChange = event =>{
+  const handleInputChange = event =>{
     let { name, value } = event.target;
-    setQ({
-      [name]:value
-    });
+    setQ(
+      [name] = value
+    );
   }
 
   let getBooks = ()=>{
@@ -35,7 +35,7 @@ export default function Home(){
     setMessage("No New Books Found, Try a Different Query");
   }
 
-  let handleFormSubmit = event => {
+  const handleFormSubmit = event => {
     event.preventDefault();
     getBooks();
   }
