@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Saved from "./pages/Saved"
 import NoMatch from "./pages/NoMatch"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 
 

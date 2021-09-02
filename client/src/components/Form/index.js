@@ -21,15 +21,12 @@ export default function Formmy({q, handleInputChange, handleFormSubmit}){
       required      
       />
       </FormGroup>
-      <div>
         <Button onClick={handleFormSubmit}
         type="submit"
-        className="float-right"
-        align="end"
+        className="float-end "
         variant="danger">
           search
         </Button>
-      </div>
     </Form>
   )
 }

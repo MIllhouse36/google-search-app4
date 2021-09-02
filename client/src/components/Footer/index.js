@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <i class="bi-alarm"></i>
+      <i className="bi-github"></i>
 
     </footer>
   );

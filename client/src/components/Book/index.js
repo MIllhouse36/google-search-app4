@@ -2,9 +2,8 @@ import React from "react";
 import { ListItem } from "../List";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button"
-import Image from "react-bootstrap/Image"
-
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
 
 function Book({ title, subtitle, authors, link, description, image, Btn }) {
   return (
@@ -16,11 +15,16 @@ function Book({ title, subtitle, authors, link, description, image, Btn }) {
         </Col>
         <Col md={4}>
           <div className="btn-container">
-            <Button variant="light" target="_blank" rel="noopener noreferrer" href={link}>
+            <Button
+              variant="light"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={link}
+            >
               View
             </Button>
-            <Btn/>
-            </div>        
+            <Btn />
+          </div>
         </Col>
       </Row>
       <Row>
@@ -30,7 +34,7 @@ function Book({ title, subtitle, authors, link, description, image, Btn }) {
       </Row>
       <Row>
         <Col md={2} sm={4}>
-          <Image className="w-100" fluid thumbnail src={image} alt={title}/>
+          <Image className="w-100" fluid thumbnail src={image} alt={title} />
         </Col>
         <Col md={10} sm={8}>
           <p>{description}</p>
