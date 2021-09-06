@@ -3,8 +3,11 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <i className="bi-github"></i>
-
+      <hr/>
+      <p className="float-end">
+      <i className="bi-github"/> Proudly made by your boi Millyrock
+      </p>
+      
     </footer>
   );
 }
