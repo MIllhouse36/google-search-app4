@@ -21,8 +21,12 @@ export default function Home() {
 
   const handleInputChange = (event) => {
     let { name, value } = event.target;
-    setQ(([name] = value));
+    setQ((name = value));
   };
+
+  // const handleInputChange = (event) => {
+  //   setQ(event.target.value)
+  // };
 
   let getBooks = () => {
     API.getBooks(q)
