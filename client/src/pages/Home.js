@@ -16,20 +16,22 @@ import "./style.css";
 
 export default function Home() {
   let [books, setBooks] = useState([]);
-  let [q, setQ] = useState("");
+  let [query, setQuery] = useState("");
   let [message, setMessage] = useState("Search For A Book to Begin");
 
-  const handleInputChange = (event) => {
-    let { name, value } = event.target;
-    setQ((name = value));
-  };
-
   // const handleInputChange = (event) => {
-  //   setQ(event.target.value)
+  //   let { name, value } = event.target;
+  //   setQ((name = value));
   // };
 
+
+
+  const handleInputChange = (event) => {
+    setQuery(event.target.value)
+  };
+
   let getBooks = () => {
-    API.getBooks(q)
+    API.getBooks(query)
       .then((res) => setBooks(res.data))
       .catch(() => setBooks([]));
     setMessage("No New Books Found, Try a Different Query");
@@ -73,7 +75,7 @@ export default function Home() {
               <Form
                 handleInputChange={handleInputChange}
                 handleFormSubmit={handleFormSubmit}
-                q={q}
+                q={query}
               />
             </Card>
           </Col>
