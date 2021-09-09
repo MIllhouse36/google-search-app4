@@ -19,18 +19,18 @@ export default function Home() {
   let [query, setQuery] = useState("");
   let [message, setMessage] = useState("Search For A Book to Begin");
 
-  // const handleInputChange = (event) => {
-  //   let { name, value } = event.target;
-  //   setQ((name = value));
-  // };
-
-
-
   const handleInputChange = (event) => {
-    setQuery(event.target.value)
+    let { name, value } = event.target;
+    setQuery((name = value));
   };
 
-  let getBooks = () => {
+
+
+  // const handleInputChange = (event) => {
+  //   setQuery(event.target.value)
+  // };
+
+  const getBooks = () => {
     API.getBooks(query)
       .then((res) => setBooks(res.data))
       .catch(() => setBooks([]));
@@ -42,7 +42,7 @@ export default function Home() {
     getBooks();
   };
 
-  let handleBookSave = (id) => {
+  const handleBookSave = (id) => {
     const book = books.find((book) => book.id === id);
 
     API.saveBook({
