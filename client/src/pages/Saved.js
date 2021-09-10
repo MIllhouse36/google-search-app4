@@ -11,7 +11,7 @@ export default function Saved (){
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    API.getSavedBooks();
+    getSavedBooks();
     })
     
   const getSavedBooks = ()=>{
@@ -20,8 +20,14 @@ export default function Saved (){
       setBooks(res.data))
       .catch(err=>console.log(err))
   }
+  const handleBookDelete = id =>{
+    API.deleteBook(id).then(res => getSavedBooks())
+  }
   return(
-    <div>
-    </div>
+    <Container>
+      <Row>
+        
+      </Row>
+    </Container>
   )
 }
