@@ -35,6 +35,13 @@ export default function Saved (){
           </Jumbotron>
         </Col>
       </Row>
+      <Row>
+        <Col md={12}>
+          <Card title="Saved Books" icon="download">
+
+          </Card>
+        </Col>
+      </Row>
     </Container>
   )
 }
