@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import API from "../utils/API";
-import { set } from "mongoose";
 
 export default function Saved (){
   const [books, setBooks] = useState([]);
