@@ -5,8 +5,11 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import API from "../utils/API";
+import Footer from "../components/Footer";
+import List from "../components/List";
+import Book from "../components/Book";
 
-export default function Saved (){
+function Saved (){
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
@@ -37,10 +40,37 @@ export default function Saved (){
       <Row>
         <Col md={12}>
           <Card title="Saved Books" icon="download">
-
+            {books.length ? (
+            <List>
+              {books.map(book =>(
+              <Book 
+                key={book.id}
+                title={book.title}
+                subtitle={book.subtitle}
+                link={book.link}
+                authors={book.authors.join(", ")}
+                description={book.description}
+                image={book.image}
+                Button={() => (
+                  <button
+                  onClick={() => handleBookDelete(book._id)}
+                  className="ml-2"
+                  >
+                    Delete
+                  </button>
+                )}
+                />
+              ))}
+            </List>
+            ) : (
+              <h2 className="text-center">No Saved Books</h2>
+            )}
           </Card>
         </Col>
       </Row>
+      <Footer/>
     </Container>
   )
 }
+
+export default Saved;
