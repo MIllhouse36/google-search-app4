@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import API from "../utils/API";
 import Footer from "../components/Footer";
-import List from "../components/List";
+import { List } from "../components/List";
 import Book from "../components/Book";
 
 function Saved (){

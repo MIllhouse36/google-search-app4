@@ -14,23 +14,25 @@ import { List } from "../components/List";
 import Footer from "../components/Footer";
 import "./style.css";
 
-export default function Home() {
+function Home() {
   let [books, setBooks] = useState([]);
   let [query, setQuery] = useState("");
   let [message, setMessage] = useState("Search For A Book to Begin");
 
-  const handleInputChange = (event) => {
-    let { name, value } = event.target;
-    setQuery((name = value));
-  };
-
-
-
   // const handleInputChange = (event) => {
-  //   setQuery(event.target.value)
+  //   let { name, value } = event.target;
+  //   setQuery((name = value));
   // };
 
+
+
+  const handleInputChange = (event) => {
+    console.log(event.target.value);
+    setQuery(event.target.value);
+  };
+
   const getBooks = () => {
+    console.log(query)
     API.getBooks(query)
       .then((res) => setBooks(res.data))
       .catch(() => setBooks([]));
@@ -117,3 +119,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
