@@ -96,14 +96,14 @@ function Home() {
                       authors={book.volumeInfo.authors.join(", ")}
                       description={book.volumeInfo.description}
                       image={book.volumeInfo.imageLinks.thumbnail}
-                      Btn={() => (
-                        <Button
+                      Button={() => (
+                        <button
                           onClick={() => handleBookSave(book.id)}
                           variant="primary"
                           className="ml-2"
                         >
                           Save
-                        </Button>
+                        </button>
                       )}
                     />
                   ))}
