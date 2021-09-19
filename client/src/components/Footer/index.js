@@ -3,11 +3,10 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <hr/>
+      <hr />
       <p className="float-end">
-      <i className="bi-github"/> Proudly made by your boi Millyrock
+        <i className="bi-github" /> Proudly made by your boi Millyrock
       </p>
-      
     </footer>
   );
 }

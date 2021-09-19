@@ -55,7 +55,12 @@ function Book({ title, subtitle, authors, link, description, image, Button }) {
         </Col>
         <Col className="col-md-4">
           <div className="btn-container">
-            <a className="btn btn-light" target="_blank" rel="noopener noreferrer" href={link}>
+            <a
+              className="btn btn-light"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={link}
+            >
               View
             </a>
             <Button />
@@ -69,7 +74,11 @@ function Book({ title, subtitle, authors, link, description, image, Button }) {
       </Row>
       <Row>
         <Col className="col-12 col-sm-4 col-md-2">
-          <img className="img-thumbnail img-fluid w-100" src={image} alt={title} />
+          <img
+            className="img-thumbnail img-fluid w-100"
+            src={image}
+            alt={title}
+          />
         </Col>
         <Col className="col-12 col-sm-8 col-md-10">
           <p>{description}</p>
