@@ -4,30 +4,7 @@ import Form from "react-bootstrap/Form";
 
 function Formmy({q, handleInputChange, handleFormSubmit }) {
   return (
-    // <Form>
-    //   <Form.Group>
-    //     <label htmlFor="Query">
-    //       <strong>Book</strong>
-    //     </label>
-    //     <Form.Control
-    //       id="Title"
-    //       type="text"
-    //       value={q}
-    //       placeholder="Ready Player One"
-    //       name="q"
-    //       onChange={handleInputChange}
-    //       required
-    //     />
-    //   </Form.Group>
-    //   <Button
-    //     onClick={handleFormSubmit}
-    //     type="submit"
-    //     className="float-end "
-    //     variant="danger"
-    //   >
-    //     search
-    //   </Button>
-    // </Form>
+  
     <form>
       <div className="form-group">
         <label htmlFor="Query">
