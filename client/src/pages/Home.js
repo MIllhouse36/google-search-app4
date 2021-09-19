@@ -19,13 +19,6 @@ function Home() {
   let [query, setQuery] = useState("");
   let [message, setMessage] = useState("Search For A Book to Begin");
 
-  // const handleInputChange = (event) => {
-  //   let { name, value } = event.target;
-  //   setQuery((name = value));
-  // };
-
-
-
   const handleInputChange = (event) => {
     console.log(event.target.value);
     setQuery(event.target.value);
