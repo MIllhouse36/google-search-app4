@@ -25,7 +25,7 @@ function Home() {
   };
 
   const getBooks = () => {
-    console.log(query)
+    console.log(query);
     API.getBooks(query)
       .then((res) => setBooks(res.data))
       .catch(() => setBooks([]));
