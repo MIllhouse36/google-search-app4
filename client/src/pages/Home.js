@@ -93,7 +93,7 @@ function Home() {
                         <button
                           onClick={() => handleBookSave(book.id)}
                           variant="primary"
-                          className="ml-2"
+                          className="btn btn-primary ml-2"
                         >
                           Save
                         </button>
